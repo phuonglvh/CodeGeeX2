@@ -8,6 +8,9 @@ Read this in [English](README_EN.md)<br>
 [日本語](README_JA.md)で読む<br>
 Lire en [Français](README_FR.md)
 
+⭐️ 最新一代 [CodeGeeX4](https://github.com/THUDM/CodeGeeX4) 模型已经正式开源。
+The newest [CodeGeeX4](https://github.com/THUDM/CodeGeeX4) has been released.
+
 # CodeGeeX2: 更强大的多语言代码生成模型
 
 CodeGeeX2 是多语言代码生成模型 [CodeGeeX](https://github.com/THUDM/CodeGeeX) ([KDD’23](https://arxiv.org/abs/2303.17568)) 的第二代模型。不同于一代 CodeGeeX（完全在国产华为昇腾芯片平台训练） ，CodeGeeX2 是基于 [ChatGLM2](https://github.com/THUDM/ChatGLM2-6B) 架构加入代码预训练实现，得益于 ChatGLM2 的更优性能，CodeGeeX2 在多项指标上取得性能提升（+107% > CodeGeeX；仅60亿参数即超过150亿参数的 StarCoder-15B 近10%），更多特性包括：
@@ -199,9 +202,10 @@ CodeGeeX2 与上一代相比，对部署更加友好。得益于使用 Multi-Que
 
 ```
 @inproceedings{zheng2023codegeex,
-      title={CodeGeeX: A Pre-Trained Model for Code Generation with Multilingual Evaluations on HumanEval-X},
-      author={Qinkai Zheng and Xiao Xia and Xu Zou and Yuxiao Dong and Shan Wang and Yufei Xue and Zihan Wang and Lei Shen and Andi Wang and Yang Li and Teng Su and Zhilin Yang and Jie Tang},
-      booktitle={KDD},
-      year={2023}
+  title={CodeGeeX: A Pre-Trained Model for Code Generation with Multilingual Benchmarking on HumanEval-X},
+  author={Qinkai Zheng and Xiao Xia and Xu Zou and Yuxiao Dong and Shan Wang and Yufei Xue and Zihan Wang and Lei Shen and Andi Wang and Yang Li and Teng Su and Zhilin Yang and Jie Tang},
+  booktitle={Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={5673--5684},
+  year={2023}
 }
 ```
