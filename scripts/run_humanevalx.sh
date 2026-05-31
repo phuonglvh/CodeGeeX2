@@ -19,20 +19,20 @@ WORLD_SIZE=1
 DATASET=humanevalx
 GENERATION_MODE=completion
 MODEL_NAME=codegeex2-6b
-MODEL_PATH=/pathto/codegeex2-6b/
+MODEL_PATH="THUDM/codegeex2-6b"
 N_CPU_WORKERS=16
 TIMEOUT=5
 
 # generation settings
 ## pass@1 greedy
-NUM_SAMPLES=1
-MICRO_BSZ=1
-TEMP=1.0
-TOPK=1
-TOPP=1.0
-MAX_LENGTH=1024
-SEED=42
-GREEDY=1
+# NUM_SAMPLES=1
+# MICRO_BSZ=1
+# TEMP=1.0
+# TOPK=1
+# TOPP=1.0
+# MAX_LENGTH=1024
+# SEED=42
+# GREEDY=1
 
 ## pass@1 estimated
 # NUM_SAMPLES=20
@@ -45,14 +45,14 @@ GREEDY=1
 # GREEDY=0
 
 ## pass@10 & pass@100
-# NUM_SAMPLES=200
-# MICRO_BSZ=4
-# TEMP=0.8
-# TOPK=0
-# TOPP=0.95
-# MAX_LENGTH=1024
-# SEED=42
-# GREEDY=0
+NUM_SAMPLES=200
+MICRO_BSZ=${MICRO_BSZ:-20}
+TEMP=0.8
+TOPK=0
+TOPP=0.95
+MAX_LENGTH=1024
+SEED=42
+GREEDY=0
 
 for l in python java js cpp go rust;
 do
